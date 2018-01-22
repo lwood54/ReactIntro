@@ -23,6 +23,9 @@ switchNameHandler = (newName) => {
   ]});
 };
 
+
+// NOTE: () => this.switchHandler('Log') is not as efficient with data and "costs" more.
+// It is best to use the this.switchNameHandler.bind(this, 'Logannnnn') when possible.
   render() {
     return (
       <div className="App">
